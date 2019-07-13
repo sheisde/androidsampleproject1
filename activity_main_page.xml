@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPageActivity"
+    android:background="@drawable/bg_grad">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar"
+        app:title="Student Activity">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="exit"
+            android:layout_gravity="right"
+            android:id="@+id/exit"
+            />
+    </android.support.v7.widget.Toolbar>
+    <TableRow
+
+        android:gravity="center">
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/Lectures"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/lecture"
+        android:layout_margin="10dp"
+        android:tooltipText="Lectures"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Marks"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/exam"
+            android:layout_margin="10dp"
+            android:tooltipText="Marks"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+
+</TableRow>
+    <TableRow
+        android:gravity="center_horizontal">
+        <TextView
+        android:id="@+id/txtLectures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Lectures"
+        android:textAllCaps="true"
+        android:textColor="#00ccff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+
+        <TextView
+            android:id="@+id/txtMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marks"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#00ccff"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </TableRow>
+
+        <TableRow
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Profile"
+                android:layout_margin="15dp"
+
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/profile"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile2"
+                android:layout_margin="15dp"
+
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/profile"
+
+
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                />
+
+        </TableRow>
+<TableRow
+    android:gravity="center_horizontal"> <TextView
+    android:id="@+id/txtProfile"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Profile"
+ android:textAlignment="center"
+    android:textAllCaps="true"
+    android:textColor="#00ccff"
+    android:textSize="14sp"
+    android:textStyle="bold"
+    android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/txtProfile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#00ccff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+</TableRow>
+
+
+</TableLayout>
